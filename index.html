@@ -1,0 +1,62 @@
+<
+html>
+<head>
+    <title>lowes app</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
+</head>
+<body>
+<div ng-app="LowesApp">
+    <div ng-controller="LowesController">
+        <div class="container">
+        <div class="heroContainer" ng-if="heroProduct">
+                <div class="section">
+                    <img class="herotiles" ng-src="{{heroProduct.imageUrls.lg}}"/>
+                </div>
+                <div class="section">
+                    <caption><p class="description descriptiontext">{{heroProduct.description }}</p></caption>
+                    <ul>
+                        <li>{{heroProduct.marketingBullets[0]}}</li>
+                        <li>{{heroProduct.marketingBullets[1]}}</li>
+                        <li>{{heroProduct.marketingBullets[2]}}</li>
+                    </ul>
+                </div>    
+                <!--use this for images for different screens -->
+                <div class="section">
+                    <div class="heroamount heroamounttext">{{heroProduct.networkPrice | currency}}</div>
+                    <button class=" detailsbutton herobuttontext">Add cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+            
+            <div class="block" ng-repeat="product in Products.productList" >
+                <div class="row">
+                    <div>
+                    <div class="productImageContainer">
+                        <div class="tilesContainer">
+                            <img class="tiles" ng-src="{{product.imageUrls.md}}"/></div>
+                        <caption><p class="description truncate descriptiontext">{{product.description }}</p></caption>
+                    </div>
+
+                    <!--use this for images for different screens -->
+                    <div class="amount amounttext">
+                        {{product.networkPrice | currency}}
+                    </div>
+                    <button class="detailsbutton buttonText" ng-click="selectedProduct(product)">View More</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div ng-view></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+<!--Angular Routing -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+
+<script type="text/javascript" src="./js/controllers/lowes.js"></script>
+</body>
+</html>

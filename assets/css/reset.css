@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+.breadcrumb{
+	display:inline;
+	float: left;
+
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+img.tiles{
+	width:100px;
+	height:100px;
+	align-items: center;
+	padding-bottom: 20px;
+}
+.truncate{
+	text-overflow: clip;
+	overflow: hidden;
+}
+li{
+	padding: 6px;
+	color: #333333;
+	opacity: 100%;
+	font-size: 14px;
+	font-family: Helvetica;
+}
+img.herotiles{
+	width:195px;
+	height:195px;
+	float:left;
+	align-items: left;
+}
+.tilesContainer{
+	text-align:center;
+}
+.productImageContainer{
+	padding-bottom: 10px;
+}
+.amount{
+	padding-bottom: 15px;
+}
+.heroamount{
+	padding-bottom: 10px;
+	float: right;
+}
+.amounttext{
+	color: #333333 ;
+	opacity: 100%;
+	font-size: 16px;
+	font-family: Helvetica-Bold;
+}
+.heroamounttext{
+	color: #333333;
+	font-size: 22px;
+	font-family: Helvetica-Bold;
+	float: left;
+}
+.block {
+	width: 20%;
+	border: 1px solid grey;
+	display: block;
+	align-items: right;
+	float: left;
+	padding: 20px;
+	margin: 10px;
+	flex-shrink: 0;
+}
+.heroblock {
+	width: 70%;
+	border: 1px solid grey;
+	display: block;
+	align-items: right;
+	padding: 20px;
+	padding-bottom: 25px;
+	margin: 10px;
+	flex-shrink: 0;
+}
+.description{
+	text-align: left;
+	height: 55px;
+}
+.descriptiontext{
+	color: #333333;
+	opacity: 100%;
+	font-size: 14px;
+	font-family: Helvetica-Bold;
+}
+.buttonText{
+	color: #0471AF;
+	font-size: 14px;
+	font-family: Helvetica;
+	background: #FFFFFF;
+	border: 1px solid gray;
+	text-transform: uppercase;
+}
+.detailsbutton{
+	height: 44px;
+	width: 100%;
+}
+
+.heroContainer{
+	float:left;
+	border: 1px solid grey;
+	width:94%;
+	padding: 20px;
+	display:flex;
+	margin-left: 10px;
+	margin-right: 30px;
+	margin-bottom: 25px;
+}
+.herobuttontext{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-family: Helvetica;
+	background: #338700;
+	float: right;
+	text-transform: uppercase;
+}
+.section{
+	display: block;
+}
+.container{
+	display: block;
+	top: 2rem;
+	margin-top: 2rem;
+	position: relative;
+	margin-left: 2vw;
+	margin-right:2vw;
+	padding-bottom: 25px;
+
+}
+.row{
+	display: flex;
+}
+.container1 {
+	display: block;
+	position: absolute;
+}
